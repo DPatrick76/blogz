@@ -9,8 +9,6 @@ class Post(db.Model):
     title = db.StringProperty(required = True)
     body = db.TextProperty(required = True)
     created = db.DateTimeProperty(auto_now_add = True)
-<<<<<<< HEAD
     author = db.ReferenceProperty(required = True)
-=======
->>>>>>> 6b36ae40ec70b99288934ddd2228d7ec2fccc300
+
     # TODO - we need an author field here; it should be required
