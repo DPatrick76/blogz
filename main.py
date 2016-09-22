@@ -6,9 +6,12 @@ import hashutils
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape = True)
 
+<<<<<<< HEAD
 #My username is Doug Password is password1  email is dougpat76@gmail.com
 #SecondGuy password2
 
+=======
+>>>>>>> 6b36ae40ec70b99288934ddd2228d7ec2fccc300
 class BlogHandler(webapp2.RequestHandler):
     """ Utility class for gathering various useful methods that are used by most request handlers """
 
@@ -22,10 +25,16 @@ class BlogHandler(webapp2.RequestHandler):
             Get all posts by a specific user, ordered by creation date (descending).
             The user parameter will be a User object.
         """
+<<<<<<< HEAD
         # TODO - filter the query so that only posts by the given user
         query = Post.all().filter("author", user).order('-created')
         filter_by_user = query.fetch(limit=limit,offset=offset)
         return filter_by_user
+=======
+
+        # TODO - filter the query so that only posts by the given user
+        return None
+>>>>>>> 6b36ae40ec70b99288934ddd2228d7ec2fccc300
 
     def get_user_by_name(self, username):
         """ Get a user object from the db, based on their username """

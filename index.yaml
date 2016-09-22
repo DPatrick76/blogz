@@ -35,9 +35,12 @@ indexes:
   properties:
   - name: user=
   - name: created
+<<<<<<< HEAD
 
 - kind: Post
   properties:
   - name: username
   - name: created
     direction: desc
+=======
+>>>>>>> 6b36ae40ec70b99288934ddd2228d7ec2fccc300
